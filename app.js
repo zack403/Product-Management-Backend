@@ -21,8 +21,6 @@ app.use(morgan('combined'));
 app.use(bodyParser.urlencoded({ extended: false }))
 
 
-app.use('/images', express.static(path.join(__dirname, 'images')));
-
 
 
 require('./models/product.model');
