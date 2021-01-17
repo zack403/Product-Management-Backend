@@ -94,9 +94,9 @@ router.patch('/:id', async(req, res) => {
     if(!req.params.id) return res.status(400).send(errorHandler(400, 'Missing id param'));
 
     try {
-
+        req.body.date_edited = new Date();
         await Product.update(req.body, {where: { id: req.params.id }});
-        
+
         for(const varieties of req.body.product_varieties) {
             await ProductVarieties.update(varieties, {where: {id: varieties.id}});
         }

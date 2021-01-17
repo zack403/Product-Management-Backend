@@ -1,6 +1,6 @@
 {
     "fm_key": "fm_jwtkey",
-    "db": "app_db",
+    "db": "fm_db",
     "sendgrid_key" : "sg_key",
     "CLOUDINARY_CLOUD_NAME" : "cloud_name",
     "CLOUDINARY_API_KEY" : "api_key",
