@@ -1,6 +1,5 @@
 const express = require('express');
 const product = require('../controllers/product.controller');
-
 const errorHandler = require('../middlewares/error');
 
 module.exports = app => {
